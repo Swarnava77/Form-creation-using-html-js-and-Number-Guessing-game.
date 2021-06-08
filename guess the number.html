@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Guess the Number!</title>
+</head>
+<body>
+<script>
+function guessNumber() {
+  const random = Math.floor (Math.random()*10) + 1;
+  let number = parseInt (prompt ('Guess a number from 1 to 10: '));
+  while (number !== random) {
+    number = parseInt (prompt ('Guess a number from 1 to 10: '));
+  }
+  if (number == random) {
+    alert ('You guessed the correct number.');
+    }
+}
+</script>
+<center><h1>Guess the Number</h1></center>
+<center><button onClick="guessNumber()">Click here</button></center>
+</body>
+</html>
+ 
