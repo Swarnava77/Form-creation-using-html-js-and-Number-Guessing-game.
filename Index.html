@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>FLOCK WEB DEVELOPMENT FORM BY SWARNAVA LAHA(20BCE10984)</title>
+</head>
+<body bgcolor=yellow>
+<marquee><b>Flock Web Development Final Project. Submit the Form and the link to the game is down below.</b></marquee>
+<h1><center><u>Form by Swarnava Laha(20BCE10984)</u></center></h1>
+<form>
+<h1><label type="text">First Name</label></h1>
+<input type="text"><br>
+<h1><label type="text">Last Name</label></h1>
+<input type="text"><br>
+<h1><label type="text">Registration No.</label></h1>
+<input type="text"><br>
+<h1><label type="text">Hometown</label></h1>
+<input type="text"><br>
+<h1><label type="text">Contact No.</label></h1>
+<input type="text"><br>
+<h1><label type="text">Password</label></h1>
+<input type="password"><br>
+<center><button type="reset">Reset</button>
+<script>
+ function clickAlert(){
+  alert("Thanks! You have submitted your form.");
+}
+</script> 
+<script>
+  function guessNumber() {
+    const random = Math.floor (Math.random()*10) + 1;
+    let number = parseInt (prompt ('Guess a number from 1 to 10: '));
+    while (number !== random) {
+      number = parseInt (prompt ('Guess a number from 1 to 10: '));
+    }
+    if (number == random) {
+      alert ('You guessed the correct number.');
+      }
+  }
+  </script>
+  <button type="submit" onclick="clickAlert()" >Submit</button><br></center>
+  <center><h1>Guess the Number</h1></center>
+  <center><button onClick="guessNumber()">Click here</button></center>
+
+</form>
+</body>
+</html>
